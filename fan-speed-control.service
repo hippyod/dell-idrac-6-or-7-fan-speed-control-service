@@ -1,0 +1,10 @@
+[Unit]
+Description=Fan Speed Control Service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/fan-speed-control.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
