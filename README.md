@@ -18,3 +18,5 @@ This stopped my machine from sounding like a jet engine, but it still gets warm 
 
 # DISCLAIMER
 #### USE AT YOUR OWN RISK!!  No responsibility taken for any damage caused to your equipment as result of this script.
+
+Original script before modification can be found and freely obtained from [NoLooseEnds](https://github.com/NoLooseEnds/Scripts)
