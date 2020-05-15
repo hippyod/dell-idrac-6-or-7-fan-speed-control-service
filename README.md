@@ -1,7 +1,7 @@
 # dell-idrac-6-fan-speed-control-service
 Simple service to monitor ambient temp of Dell PowerEdge R610 and set fan speed manually and appropiately via IPMI
 
-This service will start on boot, monitor the average core CPU temperature adjust fan speed over LAN via the ipmitool.
+This service will start on boot, monitor the average core CPU temperature every 30s, and adjust fan speed over LAN via the ipmitool based on a rolling average of the average CPU temperatures every two minutes; i.e. `${AVG_CPU_TEMPS_ARRAY_SUM}/4`
 
 **[NOTE: if you don't understand the instructions, that's what internet search is for.]**
 1. Make sure ipmitool is installed
