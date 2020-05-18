@@ -17,7 +17,7 @@ IPMI_PW=calvin
 # Extract MAX temperature from first core in celsius using sensors command
 # outputs it as two digits, and then sets to 90% of value
 MIN_TEMP=25
-MAX_TEMP=$(sensors | awk '/\+[0-9][0-9]\./{ print $6; exit }' | grep -o '[0-9][0-9]')
+MAX_TEMP=$(sensors | grep Core | awk '/\+[0-9][0-9]\./{ print $6; exit }' | grep -o '[0-9][0-9]')
 MAX_TEMP=$(awk "BEGIN { print ${MAX_TEMP} * 0.9 }" )
 
 TEMP_PERCENT_INCR=1
