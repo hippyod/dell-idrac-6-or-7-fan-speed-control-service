@@ -5,6 +5,7 @@ This service will start on boot, monitor the average core CPU temperature every 
 
 **[NOTE: if you don't understand the instructions, that's what internet search is for.]**
 1. Make sure ipmitool is installed
+1. Make sure lm_sensors is installed
 1. Make sure iDRAC is enabled over lan
 1. `sudo cp fan-speed-control.sh /usr/local/bin/`
 1. `sudo cp fan-speed-control.service /usr/lib/systemd/system/`
