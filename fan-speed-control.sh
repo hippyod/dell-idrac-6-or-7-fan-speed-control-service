@@ -72,9 +72,9 @@ do
                 TEMP_PERCENT=$(awk "BEGIN { print (${AVG_TEMP} - ${MIN_TEMP}) * ${TEMP_PERCENT_INCR} }")
                 TEMP_PERCENT=$(echo "(${TEMP_PERCENT}+0.5)/1" | bc)
 
-		if (( ${TEMP_PERCENT} < 10 ))
+		if (( ${TEMP_PERCENT} < 20 ))
                 then
-                    TEMP_PERCENT=10
+                    TEMP_PERCENT=20
                 fi
 
                 TEMP_PERCENT_HEX=$(echo "obase=16 ; ${TEMP_PERCENT}" | bc)
