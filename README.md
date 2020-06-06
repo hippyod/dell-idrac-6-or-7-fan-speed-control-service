@@ -11,6 +11,8 @@ This service will start on boot, monitor the average core CPU temperature every 
 1. Enter the iDRAC ip in fan-speed-control.sh
     1. We suggest making the IP address static
     1. If the fan isn't under control by the time your login screen comes up, check the IP address first
+1. `sudo sensors-detect`
+    1. Hit enter all the way through until it asks you to write out the results of the probe unless you know what you're doing
 1. `sudo cp fan-speed-control.sh /usr/local/bin/`
 1. `sudo cp fan-speed-control.service /usr/lib/systemd/system/`
 1. `sudo systemctl enable /usr/lib/systemd/system/fan-speed-control.service`
