@@ -9,7 +9,7 @@
 
 # IPMI SETTINGS:
 # Modify to suit your needs.
-IPMI_HOST=192.168.1.100
+IPMI_HOST=192.168.1.200
 IPMI_USER=root
 IPMI_PW=calvin
 
