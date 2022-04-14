@@ -91,6 +91,7 @@ do
         # Something went wrong connecting with IPMI
         # poll more often, and make sure to fan speed is set when connection is good
         echo "Something went wrong connecting with IPMI or safe temperature exceeded: RESTARTING"
+        sleep 5
         systemctl restart fan-speed-control.service
     fi
 
